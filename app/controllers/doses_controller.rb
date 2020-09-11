@@ -15,7 +15,7 @@ class DosesController < ApplicationController
   private
 
   def dose_params
-    params.require(:dose).permit(:description, :ingedient_id)
+    params.require(:dose).permit(:description, :ingredient_id)
   end
 
 end
