@@ -1,1 +1,22 @@
 // Specific CSS for your home-page
+
+
+.container {
+  background-image: url("https://images.unsplash.com/photo-1508614999368-9260051292e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.brand-header {
+  color: #F82E63;
+  font-family: Damion;
+  font-size: 50px;
+}
+
+.cocktail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px 15px;
+}

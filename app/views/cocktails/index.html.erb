@@ -1,9 +1,35 @@
-<h1>Cocktails#index</h1>
+<body>
 
-<% @cocktails.each do |cocktail| %>
-  <h3><%= link_to cocktail.name, cocktail_path(cocktail) %></h3>
-<% end %>
+  <div class="container">
 
-<%= link_to 'Add your own cocktail', new_cocktail_path %>
+    <nav class="navbar navbar-light bg-transparent">
+      <a class="navbar-brand" href="#"><h1 class="brand-header">Locococo</h1></a>
+      <a id=add-yours href="#">Add your cocktail</a>
+    </nav>
+
+    <h3>A cocktail collection for conoisseurs</h3>
+
+    <p>Check out the delicious drinks below or add your own alcoholic treat.</p>
+
+    <div class="cocktail-grid">
+
+      <% @cocktails.each do |cocktail| %>
+        <div class="card" style="width: 18rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text"><h4><%= link_to cocktail.name, cocktail_path(cocktail) %></h4></p>
+          </div>
+        </div>
+      <% end %>
+
+    </div>
 
 
+
+
+
+    <%= link_to 'Add your cocktail', new_cocktail_path %>
+
+  </div>
+
+</body>
